@@ -1,3 +1,6 @@
+// Backend URL from environment variable
+const BACKEND_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "https://amkyawdev-amkyawdev-coder-backend.hf.space";
+
 export const endpoints = {
   // Hugging Face API endpoints
   huggingface: {
@@ -8,7 +11,7 @@ export const endpoints = {
 
   // Backend Chat API endpoints (HuggingFace Space)
   backend: {
-    baseUrl: "https://amkyawdev-amkyawdev-coder-backend.hf.space",
+    baseUrl: BACKEND_BASE_URL,
     chat: "/api/agents/chat/chat",
     agents: "/api/agents/chat/agents",
     skills: "/api/agents/chat/agents/skills",
