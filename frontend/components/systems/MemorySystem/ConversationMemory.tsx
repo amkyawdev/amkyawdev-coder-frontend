@@ -3,6 +3,7 @@
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
 import { MessageSquare, Clock, User, Bot, Search } from "lucide-react";
 
 interface Message {
