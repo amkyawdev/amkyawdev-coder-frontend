@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { SkillOrchestrator } from "@/components/agents/SkillAgent/SkillOrchestrator";
 import { ChainOrchestrator } from "@/components/agents/LongChainAgent/ChainOrchestrator";
 import { ScriptGenerator } from "@/components/agents/ScriptAgent/ScriptGenerator";
-import { Sparkles, Plus, Search, Activity, Clock, TrendingUp, Folder, FileCode, Archive } from "lucide-react";
+import { Sparkles, Plus, Search, Activity, Clock, TrendingUp, Folder, FileCode, Archive, MessageSquare } from "lucide-react";
 
 export default function DashboardPage() {
   return (
@@ -86,27 +86,34 @@ export default function DashboardPage() {
         </div>
 
         {/* Quick Actions */}
-        <div className="grid gap-4 md:grid-cols-3 mb-8">
+        <div className="grid gap-4 md:grid-cols-4 mb-8">
           <QuickActionCard
             icon={<Sparkles className="w-6 h-6" />}
-            title="Skill Agents"
-            description="Execute specialized AI skills"
-            href="/agents/skills"
+            title="AI Chat"
+            description="Chat with AI agents"
+            href="/chat"
             gradient="from-indigo-500 to-purple-600"
           />
           <QuickActionCard
             icon={<FileCode className="w-6 h-6" />}
-            title="Script Agent"
-            description="Generate and optimize code"
-            href="/agents/script"
+            title="Skill Agents"
+            description="Execute specialized AI skills"
+            href="/agents/skills"
             gradient="from-purple-500 to-pink-600"
           />
           <QuickActionCard
             icon={<Archive className="w-6 h-6" />}
+            title="Script Agent"
+            description="Generate and optimize code"
+            href="/agents/script"
+            gradient="from-pink-500 to-red-600"
+          />
+          <QuickActionCard
+            icon={<MessageSquare className="w-6 h-6" />}
             title="Zip System"
             description="Compile and compress files"
             href="/systems/zip"
-            gradient="from-pink-500 to-red-600"
+            gradient="from-yellow-500 to-orange-600"
           />
         </div>
 

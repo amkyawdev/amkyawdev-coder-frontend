@@ -6,6 +6,16 @@ export const endpoints = {
     embeddings: "/huggingface/embeddings",
   },
 
+  // Backend Chat API endpoints (HuggingFace Space)
+  backend: {
+    baseUrl: "https://amkyawdev-amkyawdev-coder-backend.hf.space",
+    chat: "/api/agents/chat/chat",
+    agents: "/api/agents/chat/agents",
+    skills: "/api/agents/chat/agents/skills",
+    conversations: "/api/agents/chat/conversations",
+    health: "/api/health",
+  },
+
   // Workspace endpoints
   workspace: {
     list: "/workspace",

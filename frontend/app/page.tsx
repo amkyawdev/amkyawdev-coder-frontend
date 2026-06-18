@@ -30,13 +30,17 @@ export default function Home() {
                 debugging, and deployment. Transform your development workflow today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button size="lg" className="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700">
-                  <Rocket className="w-5 h-5 mr-2" />
-                  Get Started
-                </Button>
-                <Button size="lg" variant="outline">
-                  View Demo
-                </Button>
+                <Link href="/chat">
+                  <Button size="lg" className="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700">
+                    <Rocket className="w-5 h-5 mr-2" />
+                    Start Chatting
+                  </Button>
+                </Link>
+                <Link href="/dashboard">
+                  <Button size="lg" variant="outline">
+                    Dashboard
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="flex-1 flex justify-center">
@@ -76,6 +80,12 @@ export default function Home() {
               title="Script Agent"
               description="Generate, optimize, and debug code scripts with AI assistance."
               gradient="from-pink-500 to-red-600"
+            />
+            <FeatureCard
+              icon={<Sparkles className="w-6 h-6" />}
+              title="AI Chat"
+              description="Chat with AI using different agents - General, Coder, Tutor, Researcher, and more."
+              gradient="from-cyan-500 to-blue-600"
             />
             <FeatureCard
               icon={<Zap className="w-6 h-6" />}
@@ -141,12 +151,17 @@ export default function Home() {
             Join thousands of developers using AmkyawDev to build faster and smarter.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-              Start Free Trial
-            </Button>
-            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
-              Contact Sales
-            </Button>
+            <Link href="/chat">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+                <Sparkles className="w-5 h-5 mr-2" />
+                Chat Now
+              </Button>
+            </Link>
+            <Link href="/dashboard">
+              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+                Dashboard
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
