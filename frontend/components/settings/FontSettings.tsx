@@ -76,7 +76,7 @@ export function FontSettings() {
 
         <div className="p-4 rounded-lg bg-muted/50">
           <p className="text-sm font-medium mb-2">Preview</p>
-          <p className="text-muted-foreground" style={{ fontFamily, fontSize: `${fontSize}px`, lineHeight }}>
+          <p className="text-muted-foreground" style={{ fontFamily, fontSize: `${fontSize}px`, lineHeight: `${lineHeight[0]}em` }}>
             The quick brown fox jumps over the lazy dog. This is a preview of your font settings.
           </p>
         </div>
